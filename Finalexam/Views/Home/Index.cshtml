@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Chetan Singh | Portfolio";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        scroll-behavior: smooth;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .hero {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        border-radius: 20px;
+        padding: 80px 30px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .btn-resume {
+        background-color: #00f2fe;
+        color: #000;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 12px 30px;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-resume:hover {
+        background-color: #4facfe;
+        transform: scale(1.05);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        border-bottom: 2px solid #00f2fe;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .card-section {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .card-section:hover {
+        transform: scale(1.03);
+    }
+
+    a {
+        color: #00f2fe;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        text-align: center;
+        color: #aaa;
+        font-size: 14px;
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero container">
+    <h1>Chetan Singh</h1>
+    <p class="lead">Full Stack Developer • MERN Stack • Java • CDS Aspirant</p>
+    <a class="btn btn-resume" href="/Resume.docx" download>Download Resume</a>
+
+</section>
+
+<!-- About -->
+<section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="card-section">
+        <p>
+            I’m a passionate and driven Computer Programming student at Georgian College @@ILAC, with a strong focus on full-stack web development and software engineering. My expertise lies in building modern applications using React, Java, Node.js, and ASP.NET Core.
+        </p>
+        <p>
+            I recently completed a frontend development internship and am currently working on real-time chat applications, AI-powered tools, and JavaFX-based desktop apps. Alongside my tech journey, I’m also preparing for the Combined Defence Services (CDS) exam with the goal of joining the Indian Military Academy (IMA) 🇮🇳.
+        </p>
+        <p>
+            I believe in learning by building, and I’m constantly exploring new technologies and real-world use cases that solve meaningful problems.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row text-center">
+        <div class="col-md-4 card-section">
+            <h5>Frontend</h5>
+            <p>React, Redux, HTML, CSS, Tailwind, Bootstrap</p>
+        </div>
+        <div class="col-md-4 card-section">
+            <h5>Backend</h5>
+            <p>Node.js, Express, MongoDB, ASP.NET Core, Java</p>
+        </div>
+        <div class="col-md-4 card-section">
+            <h5>Tools</h5>
+            <p>Git, Firebase, Appwrite, VS Code, Postman</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="card-section">
+        <h5>💬 Chat App (MERN + Socket.IO)</h5>
+        <p>Real-time chat with user authentication and WebSocket communication. Built with Express, React, MongoDB.</p>
+        <a href="https://github.com/ChetanSingh1616/week6" target="_blank">GitHub Repo</a>
+    </div>
+    <div class="card-section">
+        <h5>📰 News Summarizer AI</h5>
+        <p>Flask-based summarizer pulling Indian news articles with NLP summarization, deployed on Render.</p>
+        <a href="https://github.com/ChetanSingh1616/poster-project" target="_blank">GitHub Repo</a>
+    </div>
+    <div class="card-section">
+        <h5>🍽️ Meal Finder (JavaFX)</h5>
+        <p>Desktop Java app to search meals by ingredient and display data using TheMealDB API.</p>
+        <a href="https://github.com/ChetanSingh1616/MealFinderApp" target="_blank">GitHub Repo</a>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="card-section">
+        <p>Email: chetansingh.67861@gmail.com</p>
+        <p>Phone: +1 437-955-3401</p>
+        <p>Location: Toronto, Canada</p>
+        <p>
+            <a href="https://github.com/ChetanSingh1616" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/chetan-singh-618780315/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    &copy; @DateTime.Now.Year Chetan Singh. Made with 💻 in ASP.NET Core.
+</footer>
